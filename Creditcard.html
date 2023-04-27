@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Creditcard.css">
+    <title>credit-card</title>
+</head>
+<body>
+    <div class="credit-card">
+  <div class="credit-card-header">
+    <img src="./logo.png" alt="Credit Card Company Logo">
+  </div>
+  <div class="credit-card-body">
+    <div class="credit-card-info">
+      <div class="credit-card-number">
+        <span>XXXX XXXX XXXX 6238</span>
+      </div>
+      <div class="credit-card-details">
+        <div class="credit-card-name">
+          <span>Chandan Kumar Sahoo</span>
+        </div>
+        <div class="credit-card-expiry">
+          <span>04/50</span>
+        </div>
+        <div class="credit-card-cvc">
+          <span>123</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="atm-container">
+  <div class="atm-screen">
+    <div class="atm-message">Please enter your PIN:</div>
+    <input type="password" id="pin-input" class="atm-input">
+    <button id="enter-btn" class="atm-btn">Enter</button>
+  </div>
+  <div class="atm-keypad">
+    <button class="atm-keypad-btn" onclick="addDigit(1)">1</button>
+    <button class="atm-keypad-btn" onclick="addDigit(2)">2</button>
+    <button class="atm-keypad-btn" onclick="addDigit(3)">3</button>
+    <button class="atm-keypad-btn" onclick="addDigit(4)">4</button>
+    <button class="atm-keypad-btn" onclick="addDigit(5)">5</button>
+    <button class="atm-keypad-btn" onclick="addDigit(6)">6</button>
+    <button class="atm-keypad-btn" onclick="addDigit(7)">7</button>
+    <button class="atm-keypad-btn" onclick="addDigit(8)">8</button>
+    <button class="atm-keypad-btn" onclick="addDigit(9)">9</button>
+    <button class="atm-keypad-btn" onclick="addDigit(0)">0</button>
+    <button class="atm-keypad-btn" onclick="clearInput()">Clear</button>
+  </div>
+</div>
+
+<div class="atm-machine">
+  <div class="screen">
+    <div class="display">
+      <span class="balance">Balance: $0.00</span>
+      <span class="message">Welcome!</span>
+    </div>
+  </div>
+  <div class="keypad">
+    <div class="row">
+      <button class="number" value="1">1</button>
+      <button class="number" value="2">2</button>
+      <button class="number" value="3">3</button>
+    </div>
+    <div class="row">
+      <button class="number" value="4">4</button>
+      <button class="number" value="5">5</button>
+      <button class="number" value="6">6</button>
+    </div>
+    <div class="row">
+      <button class="number" value="7">7</button>
+      <button class="number" value="8">8</button>
+      <button class="number" value="9">9</button>
+    </div>
+    <div class="row">
+      <button class="clear">Clear</button>
+      <button class="number" value="0">0</button>
+      <button class="enter">Enter</button>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="withdrawal">Withdrawal</button>
+    <button class="deposit">Deposit</button>
+    <button class="balance-inquiry">Balance Inquiry</button>
+    <button class="pin-change">PIN Change</button>
+  </div>
+</div>
+
+</body>
+</html>
